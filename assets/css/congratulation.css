@@ -2,12 +2,14 @@
     margin: 0;
     padding:0 !important;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+    
 }
 *:focus {
     outline: 0 !important;
 }
 .content-head{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
   }
 #done{
@@ -20,7 +22,7 @@
     font-family: Raleway;
     cursor: pointer;
     border-radius: 4px; 
-    width:15em;
+    width:510px;
     margin: 3rem;
     margin-bottom: 40px;
 }
@@ -39,17 +41,28 @@
     text-decoration: none;
     color: #5466e4;
 }
+*{
+    font-family: "Montserrat", sans-serif;
+  
+  }
 
 /* Media Query */
 @media only screen and (max-width: 320px) {
   #done{
-     margin-left: 10px;
+     margin-left: 16px;
      margin-right: 10px;
   }
   .left{
     padding-left:0;
     
 }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #done{
+width: 18rem;  
+text-align: center;  }
+   
   }
   
  

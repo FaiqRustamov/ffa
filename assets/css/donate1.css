@@ -1,7 +1,11 @@
 *:focus {
     outline: 0 !important;
 }
+*{
+    font-family: "Montserrat", sans-serif !important;
+}
 #ananoymous {
+    display: inline-block;
     background-color: #fff;
     color: #3c50e0;
     border: 1px solid #3c50e0;
@@ -10,7 +14,7 @@
     font-family: Raleway;
     cursor: pointer;
     border-radius: 4px;
-    width: 100%;
+    width: 510px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -19,13 +23,13 @@
     color: #3c50e0;
 }
 .form-elements {
+    display: inline-block;
     border-radius: 4px;
     padding: 10px !important;
     padding-right: 0px !important;
-    width: 100%;
+    width: 510px;
     background-color: #f3f3f3;
     font-size: 17px;
-    font-family: Raleway;
     border: 1px solid #d4d4d4;
 }
 
@@ -34,18 +38,20 @@
     margin-top: 2rem;
 }
 #simple {
+    display: inline-block;
     background-color: #3c50e0;
     color: #ffffff;
     border: none;
     padding: 14px 30px;
     font-size: 17px;
-    font-family: Raleway;
     cursor: pointer;
     border-radius: 4px;
-    width: 100%;
+    width:510px;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 40px;
+    
+    
 }
 
 
@@ -67,6 +73,10 @@ input {
     font-family: Raleway;
     border: 1px solid #d4d4d4;
 }
+*{
+    font-family: "Montserrat", sans-serif;
+  
+  }
 
 /* Media Query  */
 
@@ -75,8 +85,15 @@ input {
         margin-left: 0 !important;
     }
     #left{
-        width :320px;
+        width :420px;
     }
+    
+}
+@media only screen and (min-width: 2560px) {
+  .form-elements{
+      display: block;
+      margin-left: 590px;
+  }
     
 }
 
@@ -98,7 +115,16 @@ input {
 }
 @media only screen and (max-width: 768px) {
    #left{
-       width: 90%;
+       width: 18rem;
+   }
+   #simple{
+       width: 18rem;
+   }
+   #ananoymous{
+       width: 18rem;
+   }
+   .form-elements{
+       width:18rem;
    }
 }
 
