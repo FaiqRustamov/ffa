@@ -3,6 +3,7 @@
     font-family: "Montserrat", sans-serif;
 
   }
+
  
   body {
     background-color: #f1f1f1;
@@ -39,6 +40,10 @@
   
   /* Mark input boxes that gets an error on validation: */
   input.invalid {
+    background-color: #ffffff;
+    border: 1px solid  #b11b31;
+  }
+  textarea.invalid {
     background-color: #ffffff;
     border: 1px solid  #b11b31;
   }

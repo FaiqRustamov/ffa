@@ -39,7 +39,8 @@ function nextPrev(n) {
 
 function validateForm() {
   // This function deals with validation of the form fields
-  var x, y, i, valid = true;
+  var x, y, i,b, valid = true;
+  b=document.getElementsByTagName('textarea');
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByClassName("form-elements ");
   // A loop that checks every input field in the current tab:
@@ -48,7 +49,7 @@ function validateForm() {
     if (y[i].value == "" ) {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
-    
+      b.classList.add("textareac");
       // and set the current valid status to false
       valid = false;
     }
@@ -69,3 +70,14 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+//  textarea error 
+function validate(){
+    if (document.getElementById("txtarea_consolidation").value == ""){
+        alert("Enter the permanent address");
+        document.getElementById("txtarea_consolidation").focus();
+    }
+    else {
+        alert(document.getElementById("txtarea_consolidation").value);
+    }
+ }
