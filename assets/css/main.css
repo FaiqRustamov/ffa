@@ -29,7 +29,7 @@
 .section-subheading{
   color: black;
     text-align: center;
-    margin:30px auto 30px;
+    margin:30px auto 87px;
     font-weight: bold;
     font-size: 28;
 
@@ -62,6 +62,8 @@ width: 90%;
 }
 #contactForm{
   background-color: white !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 section#contact {
@@ -87,7 +89,7 @@ section#contact {
   }
   section#contact form#contactForm .form-group-textarea textarea {
     height: 100%;
-    min-height: 10rem;
+    min-height: 161px;
     margin-bottom: 40px;
   }
   section#contact form#contactForm p.help-block {
@@ -124,9 +126,9 @@ section#contact {
 }
 #contactForm{
     background-color: white;
-    padding-top: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-left: 19px;
+    padding-right: 21px;
     
     border-radius: 5px;
 }
@@ -137,7 +139,9 @@ section#contact {
     background-color: #3C50E0;
     margin-bottom: 40px;
     width: 165px;
-    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
 }
 .form-control{
     background-color: #f3f3f3 ;
@@ -206,13 +210,33 @@ ul{
   /* float: right; */
   right: 0;
 }
+
 }
+@media only screen and (min-width: 425px) {
+
+  #sendMessageButton{
+   
+    float: right;
+  }
+  }
+/* @media only screen and (max-width: 375px) {
+  section#contact form#contactForm .form-group-textarea textarea {
+   width: 312px;
+  
+  }
+  } */
 
 @media only screen and (min-width: 1400px) {
   #sendMessageButton{
    float: right;
   }
   }
+
+  @media only screen and (max-width: 800px) {
+  .logo{
+    margin-left: 41px;
+  }
+    }
 /* @media only screen and (min-width: 1024px) {
  .text-dark{
    margin-right: 10px;
@@ -238,3 +262,49 @@ background-color: white;
 #message {
   resize: none;
 } 
+
+
+
+footer ul li{
+  flex-wrap: wrap;
+}
+.footer-social{
+
+}
+.logo{
+  margin-left: 111px !important;
+}
+@media only screen and (min-width: 1400px) {
+ .logo{
+   margin-left: 110px !important;
+ }
+  }
+  @media only screen and (min-width: 768px) and (max-device-width:991px){
+    .bottom-picture{
+      padding-left: 0px  !important;
+    }
+     }
+
+
+
+
+
+  @media only screen and (max-width: 425px) {
+  .logo{
+    margin-left: 41px !important;
+    margin-top: 5px;
+  }
+  #sendMessageButton{
+    width:254px
+  }
+    }
+
+.right-img{
+  margin-bottom: 14px;
+}
+.footer-social {
+
+}
+.membership-text{
+  margin-bottom: 178px;
+}

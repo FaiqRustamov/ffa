@@ -23,8 +23,52 @@
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 <style>
- 
+    .second{
+  display: none;
+}
+.first{
+  display: block;
+}
+@media only screen and (max-width: 800px){
+  .second{
+  display: block;
+}  
+.first{
+  display: none;
+}
+}
+.four-hide{
+  display: none;
+}
+.third-hide{
+  display: block;
+}
+    @media only screen and (max-width: 900px){
+  .four-hide{
+  margin-top: 21px;
+  display: block;
+}  
+.third-hide{
+  display: none;
+}
+.picture-left{
+  display: none;
+}
+.text-background{
+  background-image: url(./assets/images/left-illustration.png)  !important;
+  background-repeat: no-repeat;
 
+}
+}
+  
+
+
+.grid-columfooter-icon {
+        display: inline-flex;
+      }
+      .grid-columfooter-icon>li>a{
+        padding: 0 24px;
+      }
 </style>
 </head>
 
@@ -58,27 +102,50 @@
     <section class="page-section" id="donate">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 id="content-header">The Federation of Azerbaijani Americans</h1>
-                    <p id="content-text">
-                        The main objectives of the FAA are to establish close contacts with Azerbaijani Diaspora
-                        Organizations, to hold
-                        join events, to assist Azerbaijani immigrants with
-                        their integration into the American economy and
-                        culture, contribute to the development of the
-                        Azerbaijani diaspora in the United States and
-                        Canada by promo ting the development of
-                        business of Azerbaijani origin in the
-                        US business environments.
+                    <div class="col-md-6 first" >
+                        <h1 id="content-header">The Federation of Azerbaijani Americans</h1>
+                        <p id="content-text">
+                            The main objectives of the FAA are to establish close contacts with Azerbaijani Diaspora
+                            Organizations, to hold
+                            join events, to assist Azerbaijani immigrants with
+                            their integration into the American economy and
+                            culture, contribute to the development of the
+                            Azerbaijani diaspora in the United States and
+                            Canada by promo ting the development of
+                            business of Azerbaijani origin in the
+                            US business environments.
 
-                    </p>
-                    <button id="donate-btn" class="buttons border-0">
-                     <a class="link-style" href="./donate1.html">Donate</a>   
-                    </button>
-                </div>
-                <div class="col-md-6">
-<img class="right-img" src="./assets/images/right-illustration.png" alt="Image">
-                </div>
+                        </p>
+                        <button id="donate-btn" class="buttons border-0">
+                        <a class="link-style" href="./donate1.html">Donate</a>   
+                        </button>
+                    </div>
+                    <div class="col-md-6 first">
+                        <object class="right-img" type='image/svg+xml' data="./assets/images/FFA_illustration (1).svg"></object>
+    <!-- <img class="right-img" src="./assets/images/FFA_illustration (1).svg" alt="Image"> -->
+                    </div>
+                    <div class="col-md-6 second">
+                        <h1 id="content-header">The Federation of Azerbaijani Americans</h1>
+                        <object class="right-img" type='image/svg+xml' data="./assets/images/FFA_illustration (1).svg"></object>
+                                        </div>
+                    <div class="col-md-6 second">
+                        <p id="content-text">
+                            The main objectives of the FAA are to establish close contacts with Azerbaijani Diaspora
+                            Organizations, to hold
+                            join events, to assist Azerbaijani immigrants with
+                            their integration into the American economy and
+                            culture, contribute to the development of the
+                            Azerbaijani diaspora in the United States and
+                            Canada by promo ting the development of
+                            business of Azerbaijani origin in the
+                            US business environments.
+    
+                        </p>
+                        <button id="donate-btn" class="buttons border-0">
+                         <a class="link-style" href="./donate1.html">Donate</a>   
+                        </button>
+                    </div>
+                   
             </div>
         </div>
     </section>
@@ -122,11 +189,11 @@
   <section class="page-section" id="aboutus">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading ">About us</h2>
-                <hr class="section-line" style="width: 60px; margin: auto 48%;">
+                <h2 class="section-heading about-us ">About us</h2>
+                <hr class="section-line" style="width: 60px; margin: auto 47%;">
                 <h3 class="section-subheading ">The Federation of Azerbaijani Americans</h3>
             </div>
-            <div class="row text-center">
+            <div class="row text-center third-hide">
                 <div class="col-12" >
                     <p class="aboutus-text"><i>The Federation of Azerbaijani Americans</i> Was founded on August 8, 2020 by Azerbaijani youth living in the States of the East Coast of the United States. It was officially registered as non-profit organization in September 2020 in New Jersey. The FAA is governed by the Board of Directors with executive responsibility and on August 14,2020 conducted its first election for the FAA 2020-2021 Presidency and Vice Presidency. In addition to the Board of Directors, the FAA has a Supervisory Board and General Assembly. 
 
@@ -134,16 +201,22 @@
                 </div>
                 
             </div>
+        
         </div>
     </section>
 <!-- About Section End -->
 <!-- Picture Section Start -->
-<section class="page-section" id="picture">
+<section class="page-section  " id="picture">
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-12 p-0">
+<div class="col-12 p-0 ">
 <img width="100%" src="./assets/images/about-us.png" alt="">
+</div>
+<div class="col-12 four-hide" >
+    <p class="aboutus-text"><i>The Federation of Azerbaijani Americans</i> Was founded on August 8, 2020 by Azerbaijani youth living in the States of the East Coast of the United States. It was officially registered as non-profit organization in September 2020 in New Jersey. The FAA is governed by the Board of Directors with executive responsibility and on August 14,2020 conducted its first election for the FAA 2020-2021 Presidency and Vice Presidency. In addition to the Board of Directors, the FAA has a Supervisory Board and General Assembly. 
+
+    </p>
 </div>
 </div>
 </div>
@@ -152,13 +225,13 @@
 <!-- Picture Section End -->
 
 <!-- Mission and Vision Section Start -->
-<section class="page-section" id="mission-vision">
+<section class="page-section text-background" id="mission-vision">
 <div class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6 picture-left">
 <img style="width: 100%;" src="./assets/images/left-illustration.png" alt="">
 </div>
-<div class="col-md-6">
+<div class="col-md-6 ">
 <h3 class="text-heading">
     Our missions and visions are:
 
@@ -241,27 +314,28 @@
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class=" col-md-4 mb-4 mb-md-0" style="width:90px">
+        <div class=" col-md-4 mb-4 mb-md-0 " style="width:90px">
   
          <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <!--Grid column-->
   
         <!--Grid column-->
-        <div class="text-center  col-md-4 mb-4 mb-md-0">
+ 
+        <div class="text-center footer-social  col-md-4 mb-4 mb-md-0">
           <h5 >stay in touch with us</h5>
   
-          <ul class="list-unstyled mb-0 d-flex" >
-            <li>
-              <a href="#!" class="text-dark"><i  class="fab fa-facebook-f"></i></a>
+          <ul class="list-unstyled mb-0 grid-columfooter-icon " >
+            <li style="margin-left:0px;margin-right: 0px !important;" >
+              <a href="#!" class="bottom-picture text-dark"><i  class="fab fa-facebook-f"></i></a>
             </li>
-            <li>
+            <li style="margin-left:0x;margin-right: 0px !important;">
               <a href="#!" class="text-dark"><i  class="fab fa-twitter"></i></a>
             </li>
-            <li>
+            <li style="margin-left:0px;margin-right: 0px !important;">
               <a href="#!" class="text-dark"><i  class="fab fa-linkedin"></i></a>
             </li>
-            <li>
+            <li style="margin-left:0px;margin-right: 0px !important;">
               <a href="#!" class="text-dark"> <i class="fas fa-envelope"></i></a>
             </li>
           </ul>
@@ -337,3 +411,5 @@ navSlide();
 </body>
 
 </html>
+
+ 

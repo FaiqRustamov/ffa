@@ -59,8 +59,9 @@ nav {
     color: #3C50E0;
     border: 2px solid  #3C50E0;
     border-radius: 4px;
-    padding: 13px;
+    padding: 13px 25px;
     text-align: center;
+    font-weight: bold;
 }
 
 .burger div {
@@ -91,6 +92,7 @@ nav {
         position: fixed;
         right: 0px;
         height: 72vh;
+        padding-right: 30px;
         top: 26vh;
         background-color: #ffffff;
         display: flex;
@@ -109,6 +111,7 @@ nav {
     }
     
     .burger {
+        margin: 14px;
         display: block;
         cursor: pointer;
     }

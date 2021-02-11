@@ -119,6 +119,12 @@
    }
   .form-elements{
     background-color: #F3F3F3;
+    padding:12px 196px auto 15px;
+  
+  }
+
+  textarea{
+    padding:12px 196px auto 15px;
   }
 
   
@@ -144,3 +150,30 @@
   .content-head{
     margin-bottom: 30px;
   }
+
+  textarea::-webkit-input-placeholder {
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+ 
+ textarea::-moz-input-placeholder {
+  padding-top: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+   }
+ 
+ textarea:-moz-input-placeholder {
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+ }
+ 
+ textarea:-ms-input-placeholder {
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+   }
