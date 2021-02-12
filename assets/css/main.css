@@ -177,6 +177,9 @@ p{
   border: none;
   margin-top: 40px;
 }
+#donate-btn:hover{
+  color: #4352c4;
+}
 #content-header{
   font-weight: bold;
   margin-bottom: 30px;
@@ -246,7 +249,8 @@ ul{
 /* Media Query  */
 ::placeholder {
   color: black !important;
-  font-style: oblique;
+  font-weight: 200;
+  opacity: 0.2;
 
  /* Firefox */
 }
@@ -285,9 +289,53 @@ footer ul li{
     }
      }
 
+     @media only screen and (min-width: 768px) and (max-device-width:1024px){
+      .nav-links {
+        padding-left: 0!important;
+        margin-left: 0px !important;
+        width: 560px;
 
+    } 
+    .logo{
+      margin-top: 10px;
+      margin-left: 40px!important;
+    }
+    
+       }
+       @media only screen and (min-width: 1024px) and (max-device-width:1140px){
+        .nav-links {
+          padding-left:0px!important;
+          margin-left: 0px !important;
+          width: 560px;
+  
+      }   .nav-links li a {
+        padding-left:10px!important;
+        margin-left: 10px !important;
+        
 
+    } 
+      .logo{
+        margin-top: 10px;
+        margin-left: 40px!important;
+      }
+      
+         }
 
+     @media only screen and (min-width: 2560px) {
+      nav{
+        width: 60%;
+      }
+       }
+       @media only screen and (min-width: 2880px) {
+        nav{
+          width: 55%;
+        }
+         }
+       @media only screen and (min-width: 3072px) {
+        nav{
+          width: 50%;
+        }
+         }
 
   @media only screen and (max-width: 425px) {
   .logo{
