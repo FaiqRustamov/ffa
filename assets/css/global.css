@@ -20,6 +20,7 @@ nav {
     min-height: 8vh;
     background-color: #ffffff;
     font-family: "Poppins", sans-serif;
+    
 }
 
 .logo {
@@ -32,7 +33,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .nav-links li {
@@ -54,6 +55,16 @@ nav {
 
     display: none;
 }
+ul {
+    padding-left: 14rem;
+}
+nav ul li{
+    margin-top: 66px;
+    margin-right:25px
+}
+.container{
+max-width: 1040px;
+}
 
 #membership-btn{
     color: #3C50E0;
@@ -74,9 +85,9 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
+    /* .nav-links {
         width: 60%;
-    }
+    } */
     .nav-links a:hover {
         border-bottom: 2px solid #FCB300;
 
@@ -195,3 +206,15 @@ nav ul li #membership-btn {
 }
 
 
+#membership-btn:hover {
+    color: white;
+    background-color: #5062e4;
+}
+#sendMessageButton:hover{
+    color: white;
+    background-color: #5062e4;
+}
+.buttons:hover{
+    background-color: #5062e4;
+
+}

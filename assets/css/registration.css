@@ -27,13 +27,20 @@
   h1 {
     text-align: center;  
   }
-  
+
+  input[type=date]::-webkit-datetime-edit {
+    color: #999 !important;
+}
+
+input[type=date]{
+  letter-spacing: 5px;
+}
   input {
     border-radius: 4px;
     padding: 10px;
     width: 100%;
     font-size: 17px;
-    font-family: Raleway;
+    font-family: 'Montserrat', sans-serif;
     border: 1px solid #D4D4D4;
     margin-bottom: 14px;
   }

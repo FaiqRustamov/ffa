@@ -134,3 +134,11 @@ input {
     background-repeat: no-repeat;
     
 }
+#simple:hover{
+    background-color: #5062e4;
+
+}
+#ananoymous:hover{
+    background-color: #5062e4;
+  color: white;
+}

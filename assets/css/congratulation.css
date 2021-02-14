@@ -27,7 +27,7 @@
     margin-bottom: 40px;
 }
 #done:hover{
-    background-color: #0b1c8a;
+  background-color: #5062e4;
 }
 .left{
     text-align: center;
@@ -72,5 +72,11 @@ text-align: center;  }
     }
   
      }
+     @media only screen and (min-width: 768px) and (max-device-width:1024px){
+      #done{
+        width: 300px;
+      }
+    
+       }
 
  

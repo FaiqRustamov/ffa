@@ -33,7 +33,7 @@
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
           <p><input  class="form-elements" placeholder="Name and Surname"  oninput="this.className = ''" name="fname"></p>
-          <p><input  class="form-elements" placeholder="Date of Birth" oninput="this.className = ''" name="dd"></p>
+          <p><input class=" form-elements" placeholder="Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')" type="date" value="Date of Birth"  id="date" oninput="this.className = ''" name="dd"></p>
           <p><input  class="form-elements" placeholder="Citizenship" oninput="this.className = ''" name="citizen"></p>
           <p><input  class="form-elements" placeholder="Education" oninput="this.className = ''" name="edu"></p>
           <p><input  class="form-elements" placeholder="Current employer and Position" oninput="this.className = ''" name="employe"></p>

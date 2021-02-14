@@ -54,11 +54,13 @@
 .picture-left{
   display: none;
 }
-.text-background{
-  background-image: url(./assets/images/left-illustration.png)  !important;
-  background-repeat: no-repeat;
-
+.grid-example {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1%;
+  grid-template-areas: "nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb";
 }
+
 }
   
 
@@ -67,7 +69,7 @@
         display: inline-flex;
       }
       .grid-columfooter-icon>li>a{
-        padding: 0 24px;
+        padding: 0 22px;
       }
 </style>
 </head>
@@ -76,7 +78,7 @@
     <!-- Navbar Section Start -->
  <header>
    
-<nav>
+<nav class="navbar ">
     <div class="logo">
         <img src="/assets/images/logo.png" alt="Logo">
     </div>
@@ -116,9 +118,9 @@
                             US business environments.
 
                         </p>
-                        <button id="donate-btn" class="buttons border-0">
-                        <a class="link-style" href="./donate1.html">Donate</a>   
-                        </button>
+                        <a class="link-style" href="./donate1.html">  <button id="donate-btn" class="buttons border-0">
+                        Donate  
+                        </button></a> 
                     </div>
                     <div class="col-md-6 first">
                         <object class="right-img" type='image/svg+xml' data="./assets/images/FFA_illustration (1).svg"></object>
@@ -163,20 +165,20 @@
             <div class="row text-center">
                 <div class="col-md-3" id="first-img">
                     <img class="membership-picture" src="./assets/images/Group 575.png" alt="">
-                    <p class="membership-text">Invitations to members-only events </p>
+                    <p class="membership-text">Invitations to <br> members-only <br> events </p>
                 </div>
                 <div class="col-md-3">
                     <img class="membership-picture" src="./assets/images/Group 576.png" alt="">
-                    <p class="membership-text">Opportunity to an access to large business network
+                    <p class="membership-text">Opportunity to an <br> access to large <br> business network
                     </p>
                 </div>
                 <div class="col-md-3">
                     <img class="membership-picture" src="./assets/images/Group 576 (1).png" alt="">
-                    <p class="membership-text">Mentoring opportunities with Azerbaijanian</p>
+                    <p class="membership-text">Mentoring <br> opportunities with <br> Azerbaijanian</p>
                 </div>
                 <div class="col-md-3">
                     <img class="membership-picture" src="/assets/images/Group 573.png" alt="">
-                    <p class="membership-text">Inclusion in a variety of activities</p>
+                    <p class="membership-text">Inclusion in a <br> variety of <br> activities</p>
                 </div>
             </div>
         </div>
@@ -228,34 +230,38 @@
 <section class="page-section text-background" id="mission-vision">
 <div class="container">
 <div class="row">
-<div class="col-md-6 picture-left">
+<!-- <div class="col-md-4 picture-left">
 <img style="width: 100%;" src="./assets/images/left-illustration.png" alt="">
+</div> -->
+<div class="col-12 grid-example vision ">
+<div class="col-4" id="left-empty" ></div>
+<div class="col-8 " id="right-text-mision">
+    <h3 class="text-heading">
+        Our missions and visions are:
+    
+    </h3>
+    <p class="text-content">
+        To foster US public and political awareness about the geopolitical situation, opportunities, and strategic challenges of the Republic of Azerbaijan.
+    </p>
+    <br>
+    <p class="text-content">
+        To participate more closely, more deeply, and in an organized manner in the political, cultural, and economic life of the United States as an Azerbaijani community.
+    </p>
+    <br>
+    <p class="text-content">
+        To convey the national interests of the Republic of Azerbaijan to US public organizations, authorities, and leaders.
+    </p>
+    <br>
+    <p class="text-content">
+        To achieve useful and effective cooperation between Azerbaijanis living in the United States.
+    
+    </p>
+    <br>
+    <p class="text-content">
+        To promote public support for the sustainable development of US-Azerbaijani relations.
+    </p>
 </div>
-<div class="col-md-6 ">
-<h3 class="text-heading">
-    Our missions and visions are:
 
-</h3>
-<p class="text-content">
-    To foster US public and political awareness about the geopolitical situation, opportunities, and strategic challenges of the Republic of Azerbaijan.
-</p>
-<br>
-<p class="text-content">
-    To participate more closely, more deeply, and in an organized manner in the political, cultural, and economic life of the United States as an Azerbaijani community.
-</p>
-<br>
-<p class="text-content">
-    To convey the national interests of the Republic of Azerbaijan to US public organizations, authorities, and leaders.
-</p>
-<br>
-<p class="text-content">
-    To achieve useful and effective cooperation between Azerbaijanis living in the United States.
-
-</p>
-<br>
-<p class="text-content">
-    To promote public support for the sustainable development of US-Azerbaijani relations.
-</p>
 </div>
 </div>
 </div>
@@ -270,9 +276,7 @@
             <hr class="section-line" style="width: 60px; margin: 50px 47%;">
 
         </div>
-        <div id="contactForm">
-
-        </div>
+     
         <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
@@ -310,9 +314,9 @@
 <!-- Footer -->
 <footer class="bg-light text-center text-lg-start">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container  p-4">
       <!--Grid row-->
-      <div class="row">
+      <div class="row footer-contain">
         <!--Grid column-->
         <div class=" col-md-4 mb-4 mb-md-0 " style="width:90px">
   
@@ -323,7 +327,7 @@
         <!--Grid column-->
  
         <div class="text-center footer-social  col-md-4 mb-4 mb-md-0">
-          <h5 >stay in touch with us</h5>
+          <h5 id="stay-in-touch" >stay in touch with us</h5>
   
           <ul class="list-unstyled mb-0 grid-columfooter-icon " >
             <li style="margin-left:0px;margin-right: 0px !important;" >
@@ -344,7 +348,7 @@
   
         <!--Grid column-->
         <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class=" mb-0">subscribe</h5>
+          <h5 class="subscribe mb-0">subscribe</h5>
           <br>
   
           <div id="footer-email" class="form-group bg-white border rounded px-2 py-2 mb-2">
