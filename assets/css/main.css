@@ -54,7 +54,7 @@ width: 90%;
   margin-bottom: 40px;
 }
 .text-content{
-  margin-bottom: 14px !important;
+  margin-bottom: 37px !important;
   line-height: 24px;
 }
 
@@ -192,7 +192,7 @@ p{
 }
 #content-text{
   text-align: left;
-  line-height: 23px;
+  line-height: 29px;
 }
 .link-style{
   text-decoration: none;
@@ -236,6 +236,9 @@ ul{
   
   }
   } */
+  .logo{
+    padding-left: 10px;
+  }
 
 @media only screen and (min-width: 1400px) {
   #sendMessageButton{
@@ -428,9 +431,10 @@ footer ul li{
   .logo{
     margin-left: 0%;
     margin-top: 5px;
+    padding-left: 10px;
   }
   #sendMessageButton{
-    width:254px
+    width:100%
   }
     }
     i{
@@ -476,3 +480,62 @@ footer ul li{
   background-repeat: no-repeat;
   background-size: contain;
 }
+.second{
+  display: none;
+}
+.first{
+  display: block;
+}
+@media only screen and (max-width: 800px){
+  .second{
+  display: block;
+}  
+@media only screen and (max-width: 425px){
+   .text-content{
+     margin-bottom: 0!important;
+   }
+   #mission-vision {
+    margin-top: 21px;
+}
+.aboutus-text {
+  margin-bottom: 0px;
+}
+} 
+.first{
+  display: none;
+}
+}
+.four-hide{
+  display: none;
+}
+.third-hide{
+  display: block;
+}
+    @media only screen and (max-width: 900px){
+  .four-hide{
+  margin-top: 21px;
+  display: block;
+}  
+.third-hide{
+  display: none;
+}
+.picture-left{
+  display: none;
+}
+.grid-example {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1%;
+  grid-template-areas: "nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb";
+}
+
+}
+  
+
+
+.grid-columfooter-icon {
+        display: inline-flex;
+      }
+      .grid-columfooter-icon>li>a{
+        padding: 0 22px;
+      }
