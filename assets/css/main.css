@@ -245,7 +245,7 @@ ul{
 
   @media only screen and (max-width: 800px) {
   .logo{
-    margin-left: 6%;
+    margin-left: 0%;
   }
     }
  @media only screen and (min-width: 1024px) {
@@ -321,7 +321,7 @@ footer ul li{
  } */
  @media only screen and (min-width: 1440px)  {
   .logo{
-    margin-left: 1%;
+    margin-left: 0%;
   }
 }
   /* nav{
@@ -358,8 +358,7 @@ footer ul li{
 
      @media only screen and (min-width: 768px) and (max-device-width:1024px){
       .nav-links {
-        padding-left: 0!important;
-   margin:auto;
+      
         
 
     } 
@@ -369,7 +368,7 @@ footer ul li{
   }
     .logo{
       margin-top: 10px;
-      margin-left: 6%;
+      margin-left: 0%;
     }
   }
   @media only screen and (min-width: 788px) and (max-device-width:992px){
@@ -377,7 +376,7 @@ footer ul li{
  
   .logo{
     margin-top: 10px;
-    margin-left: 6%;
+    margin-left: 0%;
   }
 }
     @media only screen and (min-width: 429px) and (max-device-width:768px){
@@ -390,12 +389,12 @@ footer ul li{
        }
        @media only screen and (min-width: 1024px) and (max-device-width:1140px){
         .nav-links {
-          padding-left:0px!important;
-          margin-left: 0px !important;
+          /* padding-left:0px!important; */
+          /* margin-left: 0px !important; */
   
       }   .nav-links li a {
         padding-left:10px!important;
-        margin-left: 10px !important;
+        /* margin-left: 10px !important; */
     } 
      .nav-links a {
      
@@ -403,7 +402,7 @@ footer ul li{
   }
       .logo{
         margin-top: 10px;
-       margin-left: 6%;
+       margin-left: 0%;
       }
       
          }
@@ -427,7 +426,7 @@ footer ul li{
 
   @media only screen and (max-width: 425px) {
   .logo{
-    margin-left: 6%;
+    margin-left: 0%;
     margin-top: 5px;
   }
   #sendMessageButton{

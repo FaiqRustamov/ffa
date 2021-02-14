@@ -56,7 +56,10 @@ nav {
     display: none;
 }
 ul {
-    padding-left: 14rem;
+    padding-left: 8rem;
+}
+.logo{
+    margin-left: 0;
 }
 nav ul li{
     margin-top: 66px;
