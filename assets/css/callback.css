@@ -38,7 +38,7 @@
   /* Mark input boxes that gets an error on validation: */
   input.invalid {
     background-color: #ffffff;
-    border: 1px solid  #b11b31;
+    border: 1px solid  #EB2947;
   }
   
   /* Hide all steps by default: */

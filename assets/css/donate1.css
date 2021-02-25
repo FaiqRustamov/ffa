@@ -4,6 +4,7 @@
 *{
     font-family: "Montserrat", sans-serif !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 #ananoymous {
     display: inline-block;
     background-color: #fff;
@@ -17,6 +18,7 @@
     width: 510px;
     text-align: center;
     margin-bottom: 40px;
+    height: 65px!important;
 }
 #became-member {
     text-decoration: none;
@@ -26,13 +28,25 @@
     display: inline-block;
     border-radius: 4px;
     padding: 10px !important;
+    padding-left: 20px;
     padding-right: 0px !important;
     width: 510px;
     background-color: #f3f3f3;
     font-size: 17px;
     border: 1px solid #d4d4d4;
+    margin-bottom: 40px;
+    height: 58px;
 }
-
+.invalid-feedback{
+    color: #EB2947;
+    max-width: 300px;
+    margin:auto;
+    margin-right: 50%;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #EB2947;
+   
+}
 .right {
     text-align: center;
     margin-top: 2rem;
@@ -49,14 +63,26 @@
     width:510px;
     text-align: center;
     margin-bottom: 20px;
+    height: 65px;
     margin-top: 10px;
     
     
 }
 
 
+@media only screen and (min-width: 429px) and (max-width:768px){
+    .invalid-feedback{
+       
+        margin-left: 60px;
+    }
+}
 
-
+@media only screen and (max-width:427px){
+.invalid-feedback {
+    color: #EB2947;
+    max-width: 300px;
+}
+}
 #section-header {
     margin: 50px auto 30px;
 }
@@ -110,29 +136,38 @@ input {
         margin-left: 0 !important;
     }
     #left{
-        width :425px;
+        width :100%;
     }
 }
 @media only screen and (max-width: 768px) {
    #left{
-       width: 18rem;
+       width: 70%;
    }
    #simple{
-       width: 18rem;
+       width: 70%;
+       font-size: 12px;
    }
    #ananoymous{
-       width: 18rem;
+       width: 70%;
+       font-size: 12px;
    }
    .form-elements{
-       width:18rem;
+       width:70%;
    }
 }
-
+#simple{
+    font-weight: 600;
+}
+#anonymous{
+    font-weight: 600;
+   height: 65px;
+}
 
 .container-fluid{
-    background-image: url(../images/left-illustration.png);
+    background-image: url(../images/Donate.jpg);
     background-repeat: no-repeat;
-    
+    background-size: contain;
+    background-position: left bottom;
 }
 #simple:hover{
     background-color: #5062e4;

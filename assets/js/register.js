@@ -6,11 +6,11 @@ function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
   //... and fix the Next buttons:
- 
-  if (n == (x.length -1)) {
+
+  if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Continue";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -45,10 +45,17 @@ function validateForm() {
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    if (y[i].value == "" ) {
+    if (y[i].value == "") {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
-    
+      console.log(typeof y[i].nextSibling);
+      let z = y[i].nextSibling;
+      z
+      z.innerHTML="Your input invalid"
+      z.innerHTML='.murad{'+'display:block'+'}';
+      console.log(z.innerHTML);
+      z.innerText = "Input is invalid"
+
       // and set the current valid status to false
       valid = false;
     }
@@ -69,14 +76,14 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
-$('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
+$('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function () {
   var el = this, type = $(el).attr('type');
   if ($(el).val() == '') $(el).attr('type', 'text');
-  $(el).focus(function() {
-      $(el).attr('type', type);
-      el.click();
+  $(el).focus(function () {
+    $(el).attr('type', type);
+    el.click();
   });
-  $(el).blur(function() {
-      if ($(el).val() == '') $(el).attr('type', 'text');
+  $(el).blur(function () {
+    if ($(el).val() == '') $(el).attr('type', 'text');
   });
 });

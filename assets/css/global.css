@@ -55,14 +55,14 @@ nav {
 
     display: none;
 }
-ul {
-    padding-left: 8rem;
-}
+/* ul {
+    padding-left: 120px;
+} */
 .logo{
     margin-left: 0;
 }
 nav ul li{
-    margin-top: 66px;
+    margin-top: 28px;
     margin-right:25px
 }
 .container{
