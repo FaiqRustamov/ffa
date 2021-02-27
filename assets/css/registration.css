@@ -65,7 +65,13 @@ input[type=date]{
   .tab {
     display: none;
   }
-  
+
+  .example{
+    display: flex;
+    color: #EB2947;
+    text-align: left;
+    margin:0rem;
+  }
   button {
     background-color:#3C50E0;
     color: #ffffff;

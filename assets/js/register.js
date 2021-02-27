@@ -41,22 +41,25 @@ function validateForm() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByClassName("form-elements ");
+  y = x[currentTab].getElementsByClassName("form-elements");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
-      console.log(typeof y[i].nextSibling);
-      let z = y[i].nextSibling;
-      z
-      z.innerHTML="Your input invalid"
-      z.innerHTML='.murad{'+'display:block'+'}';
-      console.log(z.innerHTML);
-      z.innerText = "Input is invalid"
+      // console.log(typeof y[i].nextSibling);
+      let z = y[i].nextElementSibling;
+      // z
+     
+      z.innerText = "Your input is invalid"
 
       // and set the current valid status to false
+      y[i].addEventListener('input', (e) => {
+        if (e.target.value != null || e.target.value.length > 0) {
+          z.innerHTML = '';
+        }
+      })
       valid = false;
     }
   }

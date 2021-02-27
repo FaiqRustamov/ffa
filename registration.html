@@ -32,73 +32,62 @@
         <form class="needs-validation" novalidate id="regForm" action="">
           <h1 class="content-head" style="margin-left: 10%;"> <b> Registration Form </b></h1>
           <!-- One "tab" for each step in the form: -->
+
+
+
           <div class="tab">
             <p><input class="form-elements" placeholder="Name and Surname" oninput="this.className = ''" name="fname">
-            <p class="murad">
+              <span class="example"></span>
+            </p>
 
-            </p>
-            </p>
             <p><input class=" form-elements" placeholder="Date of Birth" onfocus="(this.type='date')"
                 onblur="(this.type='text')" type="date" value="Date of Birth" id="date" oninput="this.className = ''"
                 name="dd">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="Citizenship" oninput="this.className = ''" name="citizen">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="Education" oninput="this.className = ''" name="edu">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="Current employer and Position" oninput="this.className = ''"
                 name="employe">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             </p>
           </div>
           <div class="tab ">
             <p><input class="form-elements" placeholder="Permament/Mailing adress" oninput="this.className = ''"
-                name="permament"></p>
-            <p><input class="form-elements" placeholder="Phone Number" oninput="this.className = ''" name="phone"></p>
-            <p class="murad">
-
+                name="permament">               <span class="example"></span>
+              </p>
+            <p><input class="form-elements" placeholder="Phone Number" oninput="this.className = ''" name="phone">
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="E-mail address" oninput="this.className = ''" name="email">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="Member of other NGOs or Associations"
                 oninput="this.className = ''" name="member">
-            <p class="murad">
-
-            </p>
+              <span class="example"></span>
             </p>
             <p><input class="form-elements" placeholder="The year you move to USA" oninput="this.className = ''"
-                name="year"></p>
-
+                name="year">
+                <span class="example"></span></p>
+               
           </div>
           <div class="tab ">
             <p><textarea
                 placeholder="Please mention the reasons why you wish to join FAA and your expectation from organization"
                 class="form-elements" name="" id="" oninput="this.className = ''" cols="63" rows="7"
                 required></textarea>
-                <p class="murad">
-
-                </p></p>
+              <span class="example"></span>
+            </p>
             <p><textarea placeholder="Please mention the way you are willing to contribute with FAA"
                 class="form-elements" name="" id="" oninput="this.className = ''" cols="70" rows="7"
                 required></textarea>
-                <p class="murad">
-
-                </p></p>
+              <span class="example"></span>
+            </p>
           </div>
 
           <button type="button" id="nextBtn" onclick="nextPrev(1)">Continue</button>
@@ -151,6 +140,7 @@
     crossorigin="anonymous"></script>
   <!-- Own Javascript link -->
   <script src="./assets/js/register.js"></script>
+
 
 </body>
 
